@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Orders</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Welcome to David Shavidze's Restaraunt :D</h1>
+
+  <div class="container">
+
+    <section id="form">
+      <h2>Place Order</h2>
+      <p>Enter your name and food name to order: </p>
+      <input type="text" id="nameInput" placeholder="Enter your name">
+      <input type="text" id="foodInput" placeholder="Enter food name">
+      <button id="orderBtn" class="btn btn-border-reveal">Order</button>
+    </section>
+
+    <section id="active">
+      <h2>Active Orders</h2>
+      <ul id="activeList"></ul>
+    </section>
+
+    <section id="completed">
+      <h2>Completed Orders</h2>
+      <ul id="completedList"></ul>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
