@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <h2>Filter</h2>
+
+        <label>
+          <input type="checkbox" name="gender" value="male" /> Male
+        </label>
+        <label>
+          <input type="checkbox" name="gender" value="female" /> female
+        </label>
+
+        <label>
+          <input type="checkbox" name="color" value="white" /> white
+        </label>
+        <label>
+          <input type="checkbox" name="color" value="brown" /> brown
+        </label>
+        <label>
+          <input type="checkbox" name="color" value="black" /> black
+        </label>
+
+        <label>
+          <input type="range" min="0" max="100" value="100" id="priceRange" />
+          max: <span id="priceValue">100</span> ₾
+        </label>
+      </aside>
+
+      <main>
+        <h1>Sea pigs</h1>
+        <div id="guineaPigContainer" class="grid"></div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

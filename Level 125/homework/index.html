@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>To-Do List App!</h2>
+
+    <label for="taskInput">Enter new task:</label>
+    <div style="display: flex; align-items: center;">
+      <input type="text" id="taskInput" style="margin-top: 15px;"/>
+      <button onclick="addTask()" style="margin-top: 15px;">Add</button>
+    </div>
+
+    <h2 style="margin-top: 30px;">Completed Tasks</h2>
+    <div id="completedTasks"></div>
+
+    <h2>Active Tasks</h2>
+    <div id="activeTasks"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
