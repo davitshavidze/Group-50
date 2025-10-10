@@ -107,7 +107,7 @@ function App() {
           </div>
 
           {user && (
-            <div className="w-[520px] bg-[#1F2A48] h-[375px] relative left-[40px] rounded-2xl mt-[20px] transition-all duration-500" style={{backgroundColor: bg2}}>
+            <div className="w-[520px] bg-[#1F2A48] h-[275px] relative left-[40px] rounded-2xl mt-[20px] transition-all duration-500" style={{backgroundColor: bg2}}>
               <img
                 src={user.avatar_url}
                 alt="avatar"
