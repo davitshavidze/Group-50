@@ -21,7 +21,7 @@ function Rating() {
               <span>Latest</span>
               <img src="./downImg.png" alt="xD" className="w-[16px] h-[16px]" />
             </div>
-            <button className="w-[166px] h-[48px] bg-[#000000] text-white rounded-4xl hover:cursor-pointer hover:text-gray-900 hover:bg-gray-300 transition-all duration-300 font-[500]">
+            <button className="w-[166px] h-[48px] bg-[#000000] text-white rounded-4xl hover:cursor-pointer hover:text-gray-900 hover:bg-gray-100 transition-all duration-300 font-[500]">
               Write a Review
             </button>
           </div>

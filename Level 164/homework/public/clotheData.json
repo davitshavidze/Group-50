@@ -1,0 +1,432 @@
+[
+  {
+    "mainImgSrc": "http:asfafasf//img-main-1.jpg",
+    "imgList": ["id1-1.png", "id1-2.jpg"],
+    "title": "Premium Jeans for Gym Look",
+    "rate": 5,
+    "price": 124,
+    "discount": 174,
+    "dressStyle": "Gym",
+    "clothesType": "Jeans",
+    "desc": "Featuring unique details and a relaxed fit, this jeans is the definition of gym fashion.",
+    "colorList": ["maroon", "teal"],
+    "sizeList": ["small", "medium", "large", "x-large"],
+    "reviews": [],
+    "id": 1
+  },
+  {
+    "mainImgSrc": "http:asfafasf//img-main-2.jpg",
+    "imgList": ["id2-1.jpg", "id2-2.jpg", "id2-3.jpg"],
+    "title": "Modern T-shirts for Gym Look",
+    "rate": 4,
+    "price": 137,
+    "dressStyle": "Gym",
+    "clothesType": "T-shirts",
+    "desc": "This t-shirts is perfect for a gym outfit. Made from a high-quality, breathable fabric, it ensures all-day comfort.",
+    "colorList": ["pink", "purple", "yellow"],
+    "sizeList": ["small", "medium", "large", "x-large"],
+    "reviews": [
+      {
+        "name": "User 695",
+        "desc": "Very satisfied with the purchase!",
+        "tim": "03.06.2024",
+        "rating": 5
+      },
+      {
+        "name": "User 977",
+        "desc": "The quality is excellent, highly recommend.",
+        "tim": "03.03.2024",
+        "rating": 4
+      }
+    ],
+    "id": 2
+  },
+  {
+    "mainImgSrc": "http:asfafasf//img-main-3.jpg",
+    "imgList": ["id3-1.png", "id3-2.png"],
+    "title": "Stylish Shirts for Party Look",
+    "rate": 5,
+    "price": 239,
+    "discount": 289,
+    "dressStyle": "Party",
+    "clothesType": "Shirts",
+    "desc": "Elevate your look with this elegant shirts. It features a superb fit and durable material, ideal for party occasions.",
+    "colorList": ["dark-grey", "light-blue"],
+    "sizeList": ["one-size"],
+    "reviews": [],
+    "id": 3
+  },
+  {
+    "mainImgSrc": "http:asfafasf//img-main-4.jpg",
+    "imgList": ["id4-1.png", "id4-2.png"],
+    "title": "Classic T-shirts for Party Look",
+    "rate": 4.4,
+    "price": 77,
+    "discount": 127,
+    "dressStyle": "Party",
+    "clothesType": "T-shirts",
+    "desc": "Featuring unique details and a relaxed fit, this t-shirts is the definition of party fashion.",
+    "colorList": ["green", "blue", "brown"],
+    "sizeList": ["small", "medium"],
+    "reviews": [
+      {
+        "name": "User 654",
+        "desc": "The quality is excellent, highly recommend.",
+        "tim": "03.09.2024",
+        "rating": 5
+      },
+      {
+        "name": "User 436",
+        "desc": "Very satisfied with the purchase!",
+        "tim": "08.03.2024",
+        "rating": 5
+      }
+    ],
+    "id": 4
+  },
+  {
+    "mainImgSrc": "http:asfafasf//img-main-5.jpg",
+    "imgList": ["id5-1.png", "id5-2.png"],
+    "title": "Modern Jeans for Party Look",
+    "rate": 3.4,
+    "price": 72,
+    "discount": 122,
+    "dressStyle": "Party",
+    "clothesType": "Jeans",
+    "desc": "An essential jeans piece for any wardrobe. Its versatile design makes it suitable for both a party setting and everyday wear.",
+    "colorList": ["navy", "beige", "khaki"],
+    "sizeList": ["medium", "large"],
+    "reviews": [
+      {
+        "name": "User 112",
+        "desc": "The quality is excellent, highly recommend.",
+        "tim": "02.06.2024",
+        "rating": 5
+      }
+    ],
+    "id": 5
+  },
+  {
+    "mainImgSrc": "http:asfafasf//img-main-6.jpg",
+    "imgList": ["id6-1.jpg", "id6-2.jpg"],
+    "title": "Modern Shirts for Formal Look",
+    "rate": 5,
+    "price": 138,
+    "discount": 188,
+    "dressStyle": "Formal",
+    "clothesType": "Shirts",
+    "desc": "An essential shirts piece for any wardrobe. Its versatile design makes it suitable for both a formal setting and everyday wear.",
+    "colorList": ["black", "white", "grey", "red"],
+    "sizeList": ["small", "medium", "large", "x-large"],
+    "reviews": [
+      {
+        "name": "User 335",
+        "desc": "The quality is excellent, highly recommend.",
+        "tim": "02.04.2024",
+        "rating": 5
+      }
+    ],
+    "id": 6
+  },
+  {
+    "mainImgSrc": "http:asfafasf//img-main-7.jpg",
+    "imgList": ["id7-1.jpg", "id7-2.jpg", "id7-3.jpg"],
+    "title": "Essential Hoodie for Party Look",
+    "rate": 4.5,
+    "price": 260,
+    "discount": 310,
+    "dressStyle": "Party",
+    "clothesType": "Hoodie",
+    "desc": "This hoodie is perfect for a party outfit. Made from a high-quality, breathable fabric, it ensures all-day comfort.",
+    "colorList": ["navy", "beige", "khaki"],
+    "sizeList": ["small", "medium", "large", "x-large"],
+    "reviews": [],
+    "id": 7
+  },
+  {
+    "mainImgSrc": "http:asfafasf//img-main-8.jpg",
+    "imgList": ["id8-1.jpg", "id8-2.jpg", "id8-3.jpg", "id8-4.jpg"],
+    "title": "Classic Shorts for Gym Look",
+    "rate": 4.9,
+    "price": 212,
+    "discount": 262,
+    "dressStyle": "Gym",
+    "clothesType": "Shorts",
+    "desc": "Designed for performance and style, this shorts is a must-have for your gym activities.",
+    "colorList": ["black", "white", "grey", "red"],
+    "sizeList": ["small", "medium", "large", "x-large"],
+    "reviews": [
+      {
+        "name": "User 841",
+        "desc": "Very satisfied with the purchase!",
+        "tim": "09.06.2024",
+        "rating": 5
+      }
+    ],
+    "id": 8
+  },
+  {
+    "mainImgSrc": "http:asfafasf//img-main-9.jpg",
+    "imgList": ["id9-1.jpg", "id9-2.jpg", "id9-3.jpg"],
+    "title": "Classic Shorts for Party Look",
+    "rate": 4.7,
+    "price": 118,
+    "discount": 168,
+    "dressStyle": "Party",
+    "clothesType": "Shorts",
+    "desc": "Designed for performance and style, this shorts is a must-have for your party activities.",
+    "colorList": ["navy", "beige", "khaki"],
+    "sizeList": ["small", "medium", "large", "x-large"],
+    "reviews": [
+      {
+        "name": "User 941",
+        "desc": "Very satisfied with the purchase!",
+        "tim": "04.07.2024",
+        "rating": 4
+      },
+      {
+        "name": "User 984",
+        "desc": "Very satisfied with the purchase!",
+        "tim": "08.06.2024",
+        "rating": 5
+      }
+    ],
+    "id": 9
+  },
+  {
+    "mainImgSrc": "http:asfafasf//img-main-10.jpg",
+    "imgList": ["id10-1.jpg", "id10-1.jpg", "id10-1.jpg"],
+    "title": "Premium Hoodie for Gym Look",
+    "rate": 4.1,
+    "price": 69,
+    "dressStyle": "Gym",
+    "clothesType": "Hoodie",
+    "desc": "An essential hoodie piece for any wardrobe. Its versatile design makes it suitable for both a gym setting and everyday wear.",
+    "colorList": ["navy", "beige", "khaki"],
+    "sizeList": ["xs", "s", "m", "l", "xl"],
+    "reviews": [],
+    "id": 10
+  },
+  {
+    "mainImgSrc": "http:asfafasf//img-main-11.jpg",
+    "imgList": ["id11-1.jpg", "id11-2.jpg"],
+    "title": "Essential Hoodie for Party Look",
+    "rate": 4.4,
+    "price": 119,
+    "dressStyle": "Party",
+    "clothesType": "Hoodie",
+    "desc": "Featuring unique details and a relaxed fit, this hoodie is the definition of party fashion.",
+    "colorList": ["dark-grey", "light-blue"],
+    "sizeList": ["small", "medium", "large", "x-large"],
+    "reviews": [],
+    "id": 11
+  },
+  {
+    "mainImgSrc": "http:asfafasf//img-main-12.jpg",
+    "imgList": ["id12-1.jpg", "id12-2.jpg", "id12-3.jpg"],
+    "title": "Modern Shorts for Gym Look",
+    "rate": 4.1,
+    "price": 168,
+    "dressStyle": "Gym",
+    "clothesType": "Shorts",
+    "desc": "Elevate your look with this elegant shorts. It features a superb fit and durable material, ideal for gym occasions.",
+    "colorList": ["pink", "purple", "yellow"],
+    "sizeList": ["xs", "s", "m", "l", "xl"],
+    "reviews": [
+      {
+        "name": "User 355",
+        "desc": "The quality is excellent, highly recommend.",
+        "tim": "08.06.2024",
+        "rating": 4
+      }
+    ],
+    "id": 12
+  },
+  {
+    "mainImgSrc": "http:asfafasf//img-main-13.jpg",
+    "imgList": ["id13-1.png", "id13-2.png", "id13-3.png"],
+    "title": "Stylish Jeans for Gym Look",
+    "rate": 4.1,
+    "price": 297,
+    "dressStyle": "Gym",
+    "clothesType": "Jeans",
+    "desc": "This jeans is perfect for a gym outfit. Made from a high-quality, breathable fabric, it ensures all-day comfort.",
+    "colorList": ["navy", "beige", "khaki"],
+    "sizeList": ["small", "medium", "large", "x-large"],
+    "reviews": [
+      {
+        "name": "User 229",
+        "desc": "The quality is excellent, highly recommend.",
+        "tim": "07.04.2024",
+        "rating": 5
+      },
+      {
+        "name": "User 389",
+        "desc": "Very satisfied with the purchase!",
+        "tim": "03.06.2024",
+        "rating": 4
+      }
+    ],
+    "id": 13
+  },
+  {
+    "mainImgSrc": "http:asfafasf//img-main-14.jpg",
+    "imgList": ["id14-1.png", "id14-2.png", "id14-3.png", "id14-4.png"],
+    "title": "Comfortable Hoodie for Gym Look",
+    "rate": 4.1,
+    "price": 228,
+    "discount": 278,
+    "dressStyle": "Gym",
+    "clothesType": "Hoodie",
+    "desc": "An essential hoodie piece for any wardrobe. Its versatile design makes it suitable for both a gym setting and everyday wear.",
+    "colorList": ["black", "white", "grey", "red"],
+    "sizeList": ["xs", "s", "m", "l", "xl"],
+    "reviews": [],
+    "id": 14
+  },
+  {
+    "mainImgSrc": "http:asfafasf//img-main-15.jpg",
+    "imgList": ["id15-1.jpg", "id15-2.jpg", "id15-3.jpg"],
+    "title": "Classic T-shirts for Casual Look",
+    "rate": 4.9,
+    "price": 170,
+    "discount": 220,
+    "dressStyle": "Casual",
+    "clothesType": "T-shirts",
+    "desc": "Elevate your look with this elegant t-shirts. It features a superb fit and durable material, ideal for casual occasions.",
+    "colorList": ["black", "white", "grey", "red"],
+    "sizeList": ["small", "medium", "large", "x-large"],
+    "reviews": [
+      {
+        "name": "User 123",
+        "desc": "Very satisfied with the purchase!",
+        "tim": "05.09.2024",
+        "rating": 4
+      }
+    ],
+    "id": 15
+  },
+  {
+    "mainImgSrc": "http:asfafasf//img-main-16.jpg",
+    "imgList": ["id16-1.png", "id16-2.jpg", "id16-3.jpg"],
+    "title": "Comfortable Shorts for Party Look",
+    "rate": 3.3,
+    "price": 270,
+    "dressStyle": "Party",
+    "clothesType": "Shorts",
+    "desc": "Designed for performance and style, this shorts is a must-have for your party activities.",
+    "colorList": ["navy", "beige", "khaki"],
+    "sizeList": ["xs", "s", "m", "l", "xl"],
+    "reviews": [
+      {
+        "name": "User 777",
+        "desc": "Very satisfied with the purchase!",
+        "tim": "07.07.2024",
+        "rating": 5
+      },
+      {
+        "name": "User 325",
+        "desc": "The quality is excellent, highly recommend.",
+        "tim": "03.04.2024",
+        "rating": 5
+      },
+      {
+        "name": "User 993",
+        "desc": "Very satisfied with the purchase!",
+        "tim": "01.09.2024",
+        "rating": 5
+      }
+    ],
+    "id": 16
+  },
+  {
+    "mainImgSrc": "http:asfafasf//img-main-17.jpg",
+    "imgList": ["id17-1.png", "id17-2.png"],
+    "title": "Comfortable T-shirts for Casual Look",
+    "rate": 3.1,
+    "price": 244,
+    "discount": 294,
+    "dressStyle": "Casual",
+    "clothesType": "T-shirts",
+    "desc": "An essential t-shirts piece for any wardrobe. Its versatile design makes it suitable for both a casual setting and everyday wear.",
+    "colorList": ["maroon", "teal"],
+    "sizeList": ["medium", "large"],
+    "reviews": [
+      {
+        "name": "User 452",
+        "desc": "Very satisfied with the purchase!",
+        "tim": "05.07.2024",
+        "rating": 5
+      },
+      {
+        "name": "User 275",
+        "desc": "Very satisfied with the purchase!",
+        "tim": "08.02.2024",
+        "rating": 5
+      }
+    ],
+    "id": 17
+  },
+  {
+    "mainImgSrc": "http:asfafasf//img-main-18.jpg",
+    "imgList": ["id18-1.png", "id18-2.png"],
+    "title": "Essential Shorts for Formal Look",
+    "rate": 3.2,
+    "price": 141,
+    "discount": 191,
+    "dressStyle": "Formal",
+    "clothesType": "Shorts",
+    "desc": "Designed for performance and style, this shorts is a must-have for your formal activities.",
+    "colorList": ["dark-grey", "light-blue"],
+    "sizeList": ["small", "medium", "large", "x-large"],
+    "reviews": [
+      {
+        "name": "User 132",
+        "desc": "The quality is excellent, highly recommend.",
+        "tim": "06.03.2024",
+        "rating": 4
+      },
+      {
+        "name": "User 505",
+        "desc": "The quality is excellent, highly recommend.",
+        "tim": "06.03.2024",
+        "rating": 5
+      },
+      {
+        "name": "User 640",
+        "desc": "The quality is excellent, highly recommend.",
+        "tim": "08.08.2024",
+        "rating": 5
+      }
+    ],
+    "id": 18
+  },
+  {
+    "mainImgSrc": "http:asfafasf//img-main-19.jpg",
+    "imgList": ["id19-1.jpg", "id19-2.jpg", "id19-3.jpg"],
+    "title": "Essential Hoodie for Party Look",
+    "rate": 4,
+    "price": 122,
+    "dressStyle": "Party",
+    "clothesType": "Hoodie",
+    "desc": "An essential hoodie piece for any wardrobe. Its versatile design makes it suitable for both a party setting and everyday wear.",
+    "colorList": ["green", "blue", "brown"],
+    "sizeList": ["xs", "s", "m", "l", "xl"],
+    "reviews": [],
+    "id": 19
+  },
+  {
+    "mainImgSrc": "http:asfafasf//img-main-20.jpg",
+    "imgList": ["id20-1.jpg", "id20-2.jpg", "id20-3.jpg"],
+    "title": "Essential Shorts for Party Look",
+    "rate": 4.1,
+    "price": 114,
+    "dressStyle": "Party",
+    "clothesType": "Shorts",
+    "desc": "This shorts is perfect for a party outfit. Made from a high-quality, breathable fabric, it ensures all-day comfort.",
+    "colorList": ["pink", "purple", "yellow"],
+    "sizeList": ["xs", "s", "m", "l", "xl"],
+    "reviews": [],
+    "id": 20
+  }
+]
