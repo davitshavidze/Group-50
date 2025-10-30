@@ -21,7 +21,7 @@ function Customers() {
 
   return (
     <>
-      <main className="w-full h-[85vh]">
+      <section className="w-full h-[85vh]">
         <div className="w-full flex h-[150px] justify-around mt-[100px] gap-[450px]">
           <h1 className="text-6xl font-extrabold">OUR HAPPY CUSTOMERS</h1>
           <div className="flex h-[50px] justify-center items-center mt-2 gap-2">
@@ -37,7 +37,7 @@ function Customers() {
             />
           </div>
         </div>
-      </main>
+      </section>
     </>
   );
 }

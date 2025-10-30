@@ -1,7 +1,7 @@
-function Home() {
+function Hero() {
   return (
     <>
-      <div className="bg-[url(./image.png)] h-auto sm:h-[90vh] w-full bg-no-repeat bg-cover bg-center flex flex-col sm:block ">
+      <section className="bg-[url(./image.png)] h-auto sm:h-[90vh] w-full bg-no-repeat bg-cover bg-center flex flex-col sm:block ">
         <div className="flex flex-col gap-6 sm:gap-8 relative sm:top-[90px] sm:ml-[150px] px-6 sm:px-0 py-10 sm:py-0 ">
           <div className="flex flex-col gap-4 mt-7">
             <h1 className="font-[900] w-full sm:w-[600px] text-4xl sm:text-6xl lg:text-7xl leading-tight">
@@ -21,9 +21,9 @@ function Home() {
         <div className="w-[90%] sm:w-[600px] mx-auto sm:ml-[150px] sm:relative sm:top-[150px]">
           <img src="./image44.png" alt="xD" className="w-full h-auto" />
         </div>
-      </div>
+      </section>
     </>
   );
 }
 
-export default Home;
+export default Hero;

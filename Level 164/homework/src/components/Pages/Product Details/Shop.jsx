@@ -1,5 +1,5 @@
 import { useState } from "react";
-function Shop() {
+function Shop({props}) {
   const [num, setNum] = useState(0)
 
   function increase(){
