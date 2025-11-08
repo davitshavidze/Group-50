@@ -1,11 +1,12 @@
-import { useState, useEffect, createContext, useContext } from "react";
+import { useState, useEffect, useContext } from "react";
+import { UserContext } from "../../../FullPage";
 import Card from "../../Small Components/Card";
+import Shop from "../Product Details/Shop";
 import { Link } from "react-router-dom";
-const UserContext = createContext()
 function Arrivals(props) {
   const [data, setData] = useState([]);
   const [newArrivals, setNewArrivals] = useState([]);
-  const [chosenCard, setChosenCard] = useState();
+  const { chosenCard, setChosenCard } = useContext(UserContext)
 
   async function getData() {
     const response = await fetch("/clotheData.json");
@@ -69,6 +70,8 @@ function Arrivals(props) {
           View All
         </button>
       </section>
+
+      <Shop />
     </>
   );
 }

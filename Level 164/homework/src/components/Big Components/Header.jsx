@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <>
@@ -16,9 +17,11 @@ function Header() {
         />
       </div>
       <header className="bg-[#FFFFFF] h-auto sm:h-[100px] w-full flex flex-wrap justify-evenly sm:justify-between items-center gap-[20px] px-4 sm:px-10 py-4">
-        <h1 className="font-extrabold text-3xl sm:text-5xl relative sm:left-[50px]">
-          SHOP.CO
-        </h1>
+        <Link to="/">
+          <h1 className="font-extrabold text-3xl sm:text-5xl relative sm:left-[50px]">
+            SHOP.CO
+          </h1>
+        </Link>
 
         <div>
           <ul className="flex flex-wrap justify-center gap-[20px] sm:gap-[40px] text-[16px] sm:text-[20px] items-center">
@@ -50,11 +53,13 @@ function Header() {
         </div>
 
         <div className="flex gap-4 justify-center sm:justify-start">
-          <img
-            src="./cart.png"
-            alt="xD"
-            className="w-[24px] h-[24px] hover:cursor-pointer"
-          />
+          <Link to="/Cart">
+            <img
+              src="./cart.png"
+              alt="xD"
+              className="w-[24px] h-[24px] hover:cursor-pointer"
+            />
+          </Link>
           <img
             src="./profile.png"
             alt="xD"

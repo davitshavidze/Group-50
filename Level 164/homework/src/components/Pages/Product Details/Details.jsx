@@ -1,7 +1,8 @@
 import Shop from "./Shop";
 import Rating from "./Rating";
 import Arrivals from "../Home/Arrivals";
-
+import { UserContext } from "../../../FullPage";
+import { useContext } from "react";
 function Details() {
   return (
     <>

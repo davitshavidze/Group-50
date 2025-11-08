@@ -1,5 +1,8 @@
 import { useState } from "react";
+import { useContext, createContext } from "react";
+import { UserContext } from "../../../FullPage";
 function Shop({props}) {
+  const { chosenCard, setChosenCard } = useContext(UserContext)
   const [num, setNum] = useState(0)
 
   function increase(){
@@ -9,6 +12,8 @@ function Shop({props}) {
   function decrease(){
     setNum(num - 1)
   }
+
+  console.log(chosenCard)
   return (
     <>
       <main className="w-full h-[80vh]">
