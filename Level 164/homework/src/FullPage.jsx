@@ -3,11 +3,10 @@ import { useContext, createContext, useState } from "react";
 import Header from "./components/Big Components/Header";
 import Footer from "./components/Big Components/Footer";
 
-
 const UserContext = createContext();
 
 function FullPage() {
-  const [chosenCard, setChosenCard] = useState();
+  const [chosenCard, setChosenCard] = useState("");
   return (
     <>
       <UserContext.Provider value={{ chosenCard, setChosenCard }}>
@@ -21,4 +20,4 @@ function FullPage() {
   );
 }
 
-export {FullPage, UserContext};
+export { FullPage, UserContext };

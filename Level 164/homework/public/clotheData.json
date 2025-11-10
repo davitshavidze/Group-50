@@ -9,7 +9,7 @@
     "dressStyle": "Gym",
     "clothesType": "Jeans",
     "desc": "Featuring unique details and a relaxed fit, this jeans is the definition of gym fashion.",
-    "colorList": ["maroon", "teal"],
+    "colorList": ["teal", "maroon"],
     "sizeList": ["small", "medium", "large", "x-large"],
     "reviews": [],
     "id": 1
@@ -51,7 +51,7 @@
     "dressStyle": "Party",
     "clothesType": "Shirts",
     "desc": "Elevate your look with this elegant shirts. It features a superb fit and durable material, ideal for party occasions.",
-    "colorList": ["dark-grey", "light-blue"],
+    "colorList": ["grey", "blue"],
     "sizeList": ["one-size"],
     "reviews": [],
     "id": 3
@@ -66,7 +66,7 @@
     "dressStyle": "Party",
     "clothesType": "T-shirts",
     "desc": "Featuring unique details and a relaxed fit, this t-shirts is the definition of party fashion.",
-    "colorList": ["green", "blue", "brown"],
+    "colorList": ["blue", "brown"],
     "sizeList": ["small", "medium"],
     "reviews": [
       {
@@ -94,7 +94,7 @@
     "dressStyle": "Party",
     "clothesType": "Jeans",
     "desc": "An essential jeans piece for any wardrobe. Its versatile design makes it suitable for both a party setting and everyday wear.",
-    "colorList": ["navy", "beige", "khaki"],
+    "colorList": ["seagreen", "navy"],
     "sizeList": ["medium", "large"],
     "reviews": [
       {
@@ -116,7 +116,7 @@
     "dressStyle": "Formal",
     "clothesType": "Shirts",
     "desc": "An essential shirts piece for any wardrobe. Its versatile design makes it suitable for both a formal setting and everyday wear.",
-    "colorList": ["black", "white", "grey", "red"],
+    "colorList": ["red", "black"],
     "sizeList": ["small", "medium", "large", "x-large"],
     "reviews": [
       {
@@ -175,7 +175,7 @@
     "dressStyle": "Party",
     "clothesType": "Shorts",
     "desc": "Designed for performance and style, this shorts is a must-have for your party activities.",
-    "colorList": ["navy", "beige", "khaki"],
+    "colorList": ["beige", "rosybrown", "navy"],
     "sizeList": ["small", "medium", "large", "x-large"],
     "reviews": [
       {
@@ -195,14 +195,14 @@
   },
   {
     "mainImgSrc": "http:asfafasf//img-main-10.jpg",
-    "imgList": ["id10-1.jpg", "id10-1.jpg", "id10-1.jpg"],
+    "imgList": ["id10-1.jpg", "id10-2.jpg", "id10-3.jpg"],
     "title": "Premium Hoodie for Gym Look",
     "rate": 4.1,
     "price": 69,
     "dressStyle": "Gym",
     "clothesType": "Hoodie",
     "desc": "An essential hoodie piece for any wardrobe. Its versatile design makes it suitable for both a gym setting and everyday wear.",
-    "colorList": ["navy", "beige", "khaki"],
+    "colorList": ["khaki", "beige", "navy"],
     "sizeList": ["xs", "s", "m", "l", "xl"],
     "reviews": [],
     "id": 10
@@ -216,7 +216,7 @@
     "dressStyle": "Party",
     "clothesType": "Hoodie",
     "desc": "Featuring unique details and a relaxed fit, this hoodie is the definition of party fashion.",
-    "colorList": ["dark-grey", "light-blue"],
+    "colorList": ["blue", "grey"],
     "sizeList": ["small", "medium", "large", "x-large"],
     "reviews": [],
     "id": 11
@@ -230,7 +230,7 @@
     "dressStyle": "Gym",
     "clothesType": "Shorts",
     "desc": "Elevate your look with this elegant shorts. It features a superb fit and durable material, ideal for gym occasions.",
-    "colorList": ["pink", "purple", "yellow"],
+    "colorList": ["pink", "yellow", "purple"],
     "sizeList": ["xs", "s", "m", "l", "xl"],
     "reviews": [
       {
@@ -251,7 +251,7 @@
     "dressStyle": "Gym",
     "clothesType": "Jeans",
     "desc": "This jeans is perfect for a gym outfit. Made from a high-quality, breathable fabric, it ensures all-day comfort.",
-    "colorList": ["navy", "beige", "khaki"],
+    "colorList": ["tan", "saddlebrown", "navy"],
     "sizeList": ["small", "medium", "large", "x-large"],
     "reviews": [
       {
@@ -279,14 +279,14 @@
     "dressStyle": "Gym",
     "clothesType": "Hoodie",
     "desc": "An essential hoodie piece for any wardrobe. Its versatile design makes it suitable for both a gym setting and everyday wear.",
-    "colorList": ["black", "white", "grey", "red"],
+    "colorList": ["black", "grey", "red", "white"],
     "sizeList": ["xs", "s", "m", "l", "xl"],
     "reviews": [],
     "id": 14
   },
   {
     "mainImgSrc": "http:asfafasf//img-main-15.jpg",
-    "imgList": ["id15-1.jpg", "id15-2.jpg", "id15-3.jpg"],
+    "imgList": ["id15-1.jpg", "id15-2.png"],
     "title": "Classic T-shirts for Casual Look",
     "rate": 4.9,
     "price": 170,
@@ -294,7 +294,7 @@
     "dressStyle": "Casual",
     "clothesType": "T-shirts",
     "desc": "Elevate your look with this elegant t-shirts. It features a superb fit and durable material, ideal for casual occasions.",
-    "colorList": ["black", "white", "grey", "red"],
+    "colorList": ["black", "grey"],
     "sizeList": ["small", "medium", "large", "x-large"],
     "reviews": [
       {
@@ -315,7 +315,7 @@
     "dressStyle": "Party",
     "clothesType": "Shorts",
     "desc": "Designed for performance and style, this shorts is a must-have for your party activities.",
-    "colorList": ["navy", "beige", "khaki"],
+    "colorList": ["wheat", "darkkhaki", "navy"],
     "sizeList": ["xs", "s", "m", "l", "xl"],
     "reviews": [
       {
@@ -377,7 +377,7 @@
     "dressStyle": "Formal",
     "clothesType": "Shorts",
     "desc": "Designed for performance and style, this shorts is a must-have for your formal activities.",
-    "colorList": ["dark-grey", "light-blue"],
+    "colorList": ["grey", "navy"],
     "sizeList": ["small", "medium", "large", "x-large"],
     "reviews": [
       {
@@ -410,7 +410,7 @@
     "dressStyle": "Party",
     "clothesType": "Hoodie",
     "desc": "An essential hoodie piece for any wardrobe. Its versatile design makes it suitable for both a party setting and everyday wear.",
-    "colorList": ["green", "blue", "brown"],
+    "colorList": ["green", "brown", "blue"],
     "sizeList": ["xs", "s", "m", "l", "xl"],
     "reviews": [],
     "id": 19
@@ -424,7 +424,7 @@
     "dressStyle": "Party",
     "clothesType": "Shorts",
     "desc": "This shorts is perfect for a party outfit. Made from a high-quality, breathable fabric, it ensures all-day comfort.",
-    "colorList": ["pink", "purple", "yellow"],
+    "colorList": ["yellow", "purple", "pink"],
     "sizeList": ["xs", "s", "m", "l", "xl"],
     "reviews": [],
     "id": 20
