@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 function Header() {
+  const [active, setActive] = useState(true)
   return (
     <>
-      <div className="w-full bg-[#000000] h-[50px] flex flex-wrap text-white items-center justify-center gap-[5px] text-[14px] sm:text-[16px] px-2 sm:px-0">
+      <div className={active ? `w-full bg-[#000000] h-[50px] flex flex-wrap text-white items-center justify-center gap-[5px] text-[14px] sm:text-[16px] px-2 sm:px-0 visible` : `hidden`}>
         <p className="text-center">
           Sign up and get 20% off to your first order.
         </p>
@@ -14,6 +16,7 @@ function Header() {
           src="./x.png"
           alt="xD"
           className="w-[14px] h-[14px] relative sm:left-[600px] hover:cursor-pointer hidden sm:block"
+          onClick={() => {setActive(!active); console.log(active)}}
         />
       </div>
       <header className="bg-[#FFFFFF] h-auto sm:h-[100px] w-full flex flex-wrap justify-evenly sm:justify-between items-center gap-[20px] px-4 sm:px-10 py-4">

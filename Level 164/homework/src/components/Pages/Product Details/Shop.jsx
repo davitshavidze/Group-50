@@ -62,7 +62,7 @@ function Shop() {
               alt="Not work"
               src={`/clothes/${item}`}
               className="w-36 h-40 object-cover rounded-2xl shadow-md hover:scale-[1.025] transition-transform duration-300 cursor-pointer"
-              onClick={() => {setActive(index); setCurrColor(product.colorList[id])}}
+              onClick={() => {setActive(index); setCurrColor(card?.colorList[index])}}
             />
           ))}
         </div>

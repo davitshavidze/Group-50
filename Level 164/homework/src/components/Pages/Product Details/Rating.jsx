@@ -38,7 +38,7 @@ function Rating() {
         <div className="flex flex-col gap-5 w-full justify-center items-center mt-[20px]">
           <div className="flex flex-row gap-7 flex-wrap max-w-[1400px] justify-center">
             {chosenCard.reviews.length > 0 ? chosenCard?.reviews.map((el, id) => (
-              <Review name={el.name} text={el.desc} time={el.tim}/>
+              <Review name={el.name} text={el.desc} time={el.tim} key={id}/>
             )) : <p className="text-2xl font-[700] mt-0.5">No Reviews</p>}
           </div>
         </div>
