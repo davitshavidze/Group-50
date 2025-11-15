@@ -4,6 +4,7 @@ import {FullPage} from "./FullPage";
 import Cart from "./components/Pages/Cart/Cart";
 import CardTable from "./components/Pages/Filtering/CardTable";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Filtering from "./components/Pages/Filtering/Filtering";
 function App() {
   return (
     <>
@@ -15,7 +16,7 @@ function App() {
             <Route index element={<Home />}></Route>
             <Route path="DetailPage" element={<Details />}></Route>
             <Route path="Cart" element={<Cart />}></Route>
-            <Route path="Filter" element={<CardTable />} />
+            <Route path="Filter" element={<Filtering />} />
           </Route>
 
         </Routes>

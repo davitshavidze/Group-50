@@ -40,19 +40,17 @@ function CardTable() {
   }, [data]);
 
   return (
-    <section className="w-full flex flex-col gap-4 items-center justify-center">
-      <div className="flex justify-around w-full">
-        <h3 className="font-[600] text-4xl">Casual</h3>
+    <section className="w-full flex flex-col gap-4 items-center mt-18">
+      <div className="flex w-full justify-between">
+        <h3 className="font-[600] text-4xl ml-5">Casual</h3>
 
         <p>
-          Showing 1-10 of 100 Products{" "}
-          <span>
-            Sort By: <span>Most Popular</span>
-          </span>
+          Showing 1-9 of 20 Products Sort By: 
+            <span className="ml-1 font-[600]">Most Popular</span>
         </p>
       </div>
 
-      <div className="grid grid-cols-3 gap-5 max-lg:grid-cols-[repeat(auto-fit, minmax(300px, 1fr))] justify-center items-center gap-36">
+      <div className="grid grid-cols-3 gap-5 max-lg:grid-cols-[repeat(auto-fit, minmax(300px, 1fr))] justify-center items-center gap-36 mt-3">
         {pages.length > 0
           ? pages[currPage].map((el, ind) => (
               <Card
@@ -66,7 +64,7 @@ function CardTable() {
           : null}
       </div>
 
-      <div className="flex justify-between gap-5">
+      <div className="flex justify-between gap-5 mt-5">
         <button
           onClick={() => setCurrPage((prev) => (prev > 0 ? prev - 1 : 0))}
           className="bg-gray-900 text-white p-4 rounded-2xl font-[500] transition-all duration-300 hover:bg-gray-100 hover:text-gray-900 cursor-pointer"
