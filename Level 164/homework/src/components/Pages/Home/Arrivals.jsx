@@ -2,8 +2,9 @@ import { useState, useEffect, useContext } from "react";
 import { UserContext } from "../../../FullPage";
 import Card from "../../Small Components/Card";
 import { Link } from "react-router-dom";
+
 function Arrivals(props) {
-  const [data, setData] = useState([]);
+  const { data } = useContext(UserContext);
   const [newArrivals, setNewArrivals] = useState([]);
   const { chosenCard, setChosenCard } = useContext(UserContext);
 

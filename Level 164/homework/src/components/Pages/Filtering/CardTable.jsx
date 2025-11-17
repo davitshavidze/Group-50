@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function CardTable() {
   const data = useContext(UserContext);
-  const [filterData, setFilterData] = useState([]);
+  const [filterData, setFilterData] = useState(data);
   const [pages, setPages] = useState([]);
   const [currPage, setCurrPage] = useState(0);
 
@@ -29,8 +29,6 @@ function CardTable() {
 
     setFilterData(data.data);
     setPages(lst);
-
-    console.log(lst);
   }
 
   useEffect(() => {
@@ -41,16 +39,16 @@ function CardTable() {
 
   return (
     <section className="w-full flex flex-col gap-4 items-center mt-18">
-      <div className="flex w-full justify-between">
-        <h3 className="font-[600] text-4xl ml-5">Casual</h3>
+      <div className="flex w-full justify-between flex-wrap gap-3 px-5">
+        <h3 className="font-[600] text-3xl sm:text-4xl">Casual</h3>
 
-        <p>
-          Showing 1-9 of 20 Products Sort By: 
-            <span className="ml-1 font-[600]">Most Popular</span>
+        <p className="text-sm sm:text-base">
+          Showing 1-9 of 20 Products Sort By:
+          <span className="ml-1 font-[600]">Most Popular</span>
         </p>
       </div>
 
-      <div className="grid grid-cols-3 gap-5 max-lg:grid-cols-[repeat(auto-fit, minmax(300px, 1fr))] justify-center items-center gap-36 mt-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 w-full px-5 mt-3">
         {pages.length > 0
           ? pages[currPage].map((el, ind) => (
               <Card
@@ -64,7 +62,7 @@ function CardTable() {
           : null}
       </div>
 
-      <div className="flex justify-between gap-5 mt-5">
+      <div className="flex flex-wrap justify-center gap-5 mt-5">
         <button
           onClick={() => setCurrPage((prev) => (prev > 0 ? prev - 1 : 0))}
           className="bg-gray-900 text-white p-4 rounded-2xl font-[500] transition-all duration-300 hover:bg-gray-100 hover:text-gray-900 cursor-pointer"
@@ -72,13 +70,13 @@ function CardTable() {
           Previous
         </button>
 
-        <div className="flex gap-4">
+        <div className="flex gap-4 flex-wrap justify-center">
           {pages.map((el, ind) => {
             return (
               <p
                 key={ind}
                 className={`${
-                  ind === currPage ? "bg-[#0000000F]" : null
+                  ind === currPage ? "bg-[#0000000F]" : ""
                 } cursor-pointer p-4 rounded-lg`}
                 onClick={() => setCurrPage(ind)}
               >

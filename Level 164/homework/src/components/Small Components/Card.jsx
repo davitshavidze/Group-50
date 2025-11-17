@@ -1,6 +1,4 @@
-import React from "react";
-
-export default function Card({ title, imgList, price, discountPrice, rating }) {
+function Card({ title, imgList, price, discountPrice, rating }) {
   return (
     <div className="flex flex-col max-w-[300px] rounded-4xl hover:scale-[1.025] transition-all duration-300 hover:cursor-pointer">
       <img
@@ -21,3 +19,5 @@ export default function Card({ title, imgList, price, discountPrice, rating }) {
     </div>
   );
 }
+
+export default Card

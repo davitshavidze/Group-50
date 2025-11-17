@@ -1,8 +1,7 @@
-import { useState, useContext, useEffect } from "react";
+import { useState, useContext, useEffect, createContext } from "react";
 import { UserContext } from "../../../FullPage";
-
 function Filter() {
-  let dressStyles = ["Casual", "Formal", "Party", "Gym"]
+  let dressStyles = ["Casual", "Formal", "Party", "Gym"];
   const { data } = useContext(UserContext);
   const [colorShow, setColorShow] = useState(false);
   const [filters, setFilters] = useState({
@@ -12,7 +11,7 @@ function Filter() {
     colorList: [],
     size: "",
   });
-
+  
   function getEveryColor() {
     let copyFilter = [];
     let finishedFilter = [];
@@ -21,18 +20,13 @@ function Filter() {
       copyFilter.push(...el.colorList);
     });
 
-    console.log(copyFilter);
-
     for (let i of copyFilter) {
       if (!finishedFilter.includes(i)) {
         finishedFilter.push(i);
       }
     }
 
-    console.log(finishedFilter);
-
     return finishedFilter;
-
   }
 
   function getEverySize() {
@@ -49,17 +43,88 @@ function Filter() {
       }
     }
 
-    console.log(finishedFilter) 
-
     return finishedFilter;
+  }
 
+  function getFilteredRender() {
+    let final = [];
+
+    if (data.length > 0) {
+      if (filters.clothesType.length > 0) {
+        for (let i of data) {
+          if (i.clothesType === filters.clothesType) {
+            final.push(i);
+          }
+        }
+      } else {
+        for (let i of data) {
+          final.push(i);
+        }
+      }
+    }
+
+    let final2 = [];
+    if (final.length > 0) {
+      if (filters.colorList.length > 0) {
+        for (let color of filters.colorList) {
+          for (let item of final) {
+            if (item.colorList.includes(color)) {
+              final2.push(item);
+            }
+          }
+        }
+      } else {
+        for (let i of final) {
+          final2.push(i);
+        }
+      }
+    }
+
+    let final3 = [];
+    if (final2.length > 0) {
+      if (filters.size.length > 0) {
+        for (let item of final2) {
+          if (item.sizeList.includes(filters.size)) {
+            final3.push(item);
+          }
+        }
+      } else {
+        for (let i of final2) {
+          final3.push(i);
+        }
+      }
+    }
+
+    let final4 = [];
+    if (final3.length > 0) {
+      if (filters.dressStyle.length > 0) {
+        for (let item of final3) {
+          if (item.dressStyle === filters.dressStyle) {
+            final4.push(item);
+          }
+        }
+      } else {
+        for (let i of final3) {
+          final4.push(i);
+        }
+      }
+    }
+
+    console.log(final4)
   }
 
   getEveryColor();
   getEverySize();
 
   useEffect(() => {
+    if (data) {
+      getFilteredRender();
+    }
+  }, [data]);
+
+  useEffect(() => {
     console.log(filters);
+    getFilteredRender();
   }, [filters]);
 
   return (
@@ -102,8 +167,14 @@ function Filter() {
         <h2>Price</h2>
 
         <div className="flex flex-col gap-1">
-          <input type="number" className="border border-[border-[#0000001A]] rounded-2xl" />
-          <input type="number" className="border border-[border-[#0000001A]] rounded-2xl" />
+          <input
+            type="number"
+            className="border border-[border-[#0000001A]] rounded-2xl"
+          />
+          <input
+            type="number"
+            className="border border-[border-[#0000001A]] rounded-2xl"
+          />
         </div>
       </div>
       <hr className="border-[#0000001A]" />
@@ -133,7 +204,7 @@ function Filter() {
                 } else
                   setFilters({
                     ...filters,
-                    colorList: [ ...filters.colorList, el],
+                    colorList: [...filters.colorList, el],
                   });
               }}
               key={ind}

@@ -20,7 +20,7 @@ function FullPage() {
 
   return (
     <>
-      <UserContext.Provider value={{ chosenCard, setChosenCard, data }}>
+      <UserContext.Provider value={{ chosenCard, setChosenCard, data}}>
         <Header />
         <main>
           <Outlet />
