@@ -1,5 +1,6 @@
 import { useState, useContext, useEffect, createContext } from "react";
 import { UserContext } from "../../../FullPage";
+
 function Filter() {
   let dressStyles = ["Casual", "Formal", "Party", "Gym"];
   const { data } = useContext(UserContext);
@@ -11,7 +12,9 @@ function Filter() {
     colorList: [],
     size: "",
   });
-  
+
+  const { ready, setReady } = useContext(UserContext);
+
   function getEveryColor() {
     let copyFilter = [];
     let finishedFilter = [];
@@ -25,7 +28,6 @@ function Filter() {
         finishedFilter.push(i);
       }
     }
-
     return finishedFilter;
   }
 
@@ -46,6 +48,9 @@ function Filter() {
     return finishedFilter;
   }
 
+  // ================================
+  // FILTERING LOGIC (same)
+  // ================================
   function getFilteredRender() {
     let final = [];
 
@@ -69,7 +74,13 @@ function Filter() {
         for (let color of filters.colorList) {
           for (let item of final) {
             if (item.colorList.includes(color)) {
-              final2.push(item);
+              const colorIndex = item.colorList.indexOf(color);
+              const selectedImg = item.imgList[colorIndex];
+
+              final2.push({
+                ...item,
+                selectedImg: selectedImg,
+              });
             }
           }
         }
@@ -79,6 +90,8 @@ function Filter() {
         }
       }
     }
+
+    console.log(final2);
 
     let final3 = [];
     if (final2.length > 0) {
@@ -110,7 +123,8 @@ function Filter() {
       }
     }
 
-    console.log(final4)
+    setReady(final4);
+    console.log(ready);
   }
 
   getEveryColor();

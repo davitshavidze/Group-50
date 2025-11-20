@@ -4,9 +4,8 @@ import { UserContext } from "../../../FullPage";
 function Shop() {
   const { chosenCard, setChosenCard } = useContext(UserContext);
   const [num, setNum] = useState(0);
-  const [card, setCard] = useState(chosenCard || null);
-  const [active, setActive] = useState(0)
-  const [currColor, setCurrColor] = useState(chosenCard.colorList[0])
+  const [card, setCard] = useState(chosenCard);
+  const [active, setActive] = useState(0);
 
   useEffect(() => {
     if (chosenCard) {
@@ -62,15 +61,19 @@ function Shop() {
               alt="Not work"
               src={`/clothes/${item}`}
               className="w-36 h-40 object-cover rounded-2xl shadow-md hover:scale-[1.025] transition-transform duration-300 cursor-pointer"
-              onClick={() => {setActive(index); setCurrColor(card?.colorList[index])}}
+              onClick={() => {
+                setActive(index);
+                setCurrColor(card?.colorList[index]);
+              }}
             />
           ))}
         </div>
 
         <div>
-          {
-            <img src={`/clothes/${chosenCard.imgList[active]}`} className="w-[550px] h-[520px] rounded-4xl hover:cursor-pointer hover:scale-[1.025] transition-all duration-300 object-cover bg-center" />
-          }
+          <img
+            src={`/clothes/${card?.imgList[active]}`}
+            className="w-[550px] h-[520px] rounded-4xl hover:cursor-pointer hover:scale-[1.025] transition-all duration-300 object-cover bg-center"
+          />
         </div>
 
         <div className="flex flex-col gap-7">
@@ -99,7 +102,9 @@ function Shop() {
                   key={id}
                   className="w-9 h-9 rounded-full shadow-inner cursor-pointer hover:scale-[1.025] transition-transform"
                   style={{ backgroundColor: color }}
-                  onClick={() => setCurrColor(color)}
+                  onClick={() => {
+                    setActive(id);
+                  }}
                 />
               ))}
             </div>

@@ -145,7 +145,7 @@
   },
   {
     "mainImgSrc": "http:asfafasf//img-main-8.jpg",
-    "imgList": ["id8-1.jpg", "id8-2.jpg", "id8-3.jpg", "id8-4.jpg"],
+    "imgList": ["id8-1.jpg", "id8-2.jpg", "id8-3.jpg"],
     "title": "Classic Shorts for Gym Look",
     "rate": 4.9,
     "price": 212,
@@ -153,7 +153,7 @@
     "dressStyle": "Gym",
     "clothesType": "Shorts",
     "desc": "Designed for performance and style, this shorts is a must-have for your gym activities.",
-    "colorList": ["black", "white", "grey", "red"],
+    "colorList": ["black", "white", "grey"],
     "sizeList": ["small", "medium", "large", "x-large"],
     "reviews": [
       {

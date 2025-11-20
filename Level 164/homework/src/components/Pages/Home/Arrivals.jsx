@@ -8,16 +8,6 @@ function Arrivals(props) {
   const [newArrivals, setNewArrivals] = useState([]);
   const { chosenCard, setChosenCard } = useContext(UserContext);
 
-  async function getData() {
-    const response = await fetch("/clotheData.json");
-    const responseData = await response.json();
-    setData(responseData);
-  }
-
-  useEffect(() => {
-    getData();
-  }, []);
-
   useEffect(() => {
     if (!chosenCard) {
       return;

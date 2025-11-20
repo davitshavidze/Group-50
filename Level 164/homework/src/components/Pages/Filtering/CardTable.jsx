@@ -8,15 +8,18 @@ function CardTable() {
   const [filterData, setFilterData] = useState(data);
   const [pages, setPages] = useState([]);
   const [currPage, setCurrPage] = useState(0);
+  const { ready, setReady } = useContext(UserContext);
+
+  console.log(ready);
 
   function getFilteredFata() {
-    if (!data) return;
+    if (!ready) return;
 
     let lst = [];
     let temp = [];
 
-    for (let i = 0; i < data.data.length; i++) {
-      temp.push(data.data[i]);
+    for (let i = 0; i < ready.length; i++) {
+      temp.push(ready[i]);
       if (temp.length === 9) {
         lst.push(temp);
         temp = [];
@@ -54,7 +57,7 @@ function CardTable() {
               <Card
                 key={ind}
                 title={el.title}
-                imgList={el.imgList[0]}
+                imgList={el.selectedImg ? el.selectedImg : el.imgList[0]}
                 price={el.price}
                 rating={el.rate}
               />
