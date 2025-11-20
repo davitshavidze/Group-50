@@ -48,9 +48,6 @@ function Filter() {
     return finishedFilter;
   }
 
-  // ================================
-  // FILTERING LOGIC (same)
-  // ================================
   function getFilteredRender() {
     let final = [];
 
