@@ -74,10 +74,7 @@ function Filter() {
               const colorIndex = item.colorList.indexOf(color);
               const selectedImg = item.imgList[colorIndex];
 
-              final2.push({
-                ...item,
-                selectedImg: selectedImg,
-              });
+              final2.push({ ...item, selectedImg: selectedImg });
             }
           }
         }
