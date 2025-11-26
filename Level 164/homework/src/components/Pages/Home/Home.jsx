@@ -12,7 +12,7 @@ function Home() {
       <Arrivals title="NEW ARRIVALS" />
       <Arrivals title="TOP SELLING" />
       <DressStyle />
-      <Customers />
+      {/* <Customers /> */}
     </>
   );
 }

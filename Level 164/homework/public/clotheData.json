@@ -279,7 +279,7 @@
     "dressStyle": "Gym",
     "clothesType": "Hoodie",
     "desc": "An essential hoodie piece for any wardrobe. Its versatile design makes it suitable for both a gym setting and everyday wear.",
-    "colorList": ["black", "grey", "red", "white"],
+    "colorList": ["black", "grey", "red"],
     "sizeList": ["xs", "s", "m", "l", "xl"],
     "reviews": [],
     "id": 14

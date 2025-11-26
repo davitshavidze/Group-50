@@ -8,7 +8,7 @@ function CardTable() {
   const [filterData, setFilterData] = useState(data);
   const [pages, setPages] = useState([]);
   const [currPage, setCurrPage] = useState(0);
-  const { ready, setReady } = useContext(UserContext);
+  const { chosenCard, setChosenCard, ready, setReady } = useContext(UserContext);
 
   console.log(ready);
 
@@ -45,22 +45,30 @@ function CardTable() {
       <div className="flex w-full justify-between flex-wrap gap-3 px-5">
         <h3 className="font-[600] text-3xl sm:text-4xl">Casual</h3>
 
-        <p className="text-sm sm:text-base">
+        {/* <p className="text-sm sm:text-base">
           Showing 1-9 of 20 Products Sort By:
           <span className="ml-1 font-[600]">Most Popular</span>
-        </p>
+        </p> */}
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 w-full px-5 mt-3">
         {pages.length > 0
           ? pages[currPage].map((el, ind) => (
-              <Card
+              <Link
+                to="/DetailPage"
+                onClick={() => {
+                  setChosenCard(data[el.id - 1]);
+                }}
                 key={ind}
-                title={el.title}
-                imgList={el.selectedImg ? el.selectedImg : el.imgList[0]}
-                price={el.price}
-                rating={el.rate}
-              />
+              >
+                <Card
+                  key={ind}
+                  title={el.title}
+                  imgList={el.selectedImg ? el.selectedImg : el.imgList[0]}
+                  price={el.price}
+                  rating={el.rate}
+                />
+              </Link>
             ))
           : null}
       </div>

@@ -18,11 +18,13 @@ function FullPage() {
     getData()
   }, []);
   
-  const [ready, setReady] = useState(data)
+  const [ready, setReady] = useState(data);
+  const [sum, setSum] = useState(0);
+  const [active, setActive] = useState(true)
 
   return (
     <>
-      <UserContext.Provider value={{ chosenCard, setChosenCard, data, ready, setReady }}>
+      <UserContext.Provider value={{ chosenCard, setChosenCard, data, ready, setReady, sum, setSum, active, setActive }}>
         <Header />
         <main>
           <Outlet />

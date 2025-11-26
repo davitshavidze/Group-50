@@ -1,10 +1,13 @@
-import { useState, useContext, useEffect, createContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { UserContext } from "../../../FullPage";
 
 function Filter() {
   let dressStyles = ["Casual", "Formal", "Party", "Gym"];
-  const { data } = useContext(UserContext);
+  const { data = [], ready, setReady } = useContext(UserContext);
+
   const [colorShow, setColorShow] = useState(false);
+  const [prices, setPrices] = useState([0, 0]);
+
   const [filters, setFilters] = useState({
     price: [0, 100000],
     dressStyle: [],
@@ -13,14 +16,14 @@ function Filter() {
     size: "",
   });
 
-  const { ready, setReady } = useContext(UserContext);
+  const prices2 = filters.price;
 
   function getEveryColor() {
     let copyFilter = [];
     let finishedFilter = [];
 
     data.forEach((el) => {
-      copyFilter.push(...el.colorList);
+      if (Array.isArray(el.colorList)) copyFilter.push(...el.colorList);
     });
 
     for (let i of copyFilter) {
@@ -85,8 +88,6 @@ function Filter() {
       }
     }
 
-    console.log(final2);
-
     let final3 = [];
     if (final2.length > 0) {
       if (filters.size.length > 0) {
@@ -117,21 +118,28 @@ function Filter() {
       }
     }
 
-    setReady(final4);
-    console.log(ready);
+    let final5 = [];
+    if (prices2[0] <= prices2[1]) {
+      if (final4.length > 0) {
+        for (let item of final4) {
+          const prs = Number(item.price ? item.price : 0);
+          if (prices2[0] <= prs && prices2[1] >= prs) {
+            final5.push(item);
+          }
+        }
+      }
+    } else {
+      final5 = [...final4];
+    }
+
+    setReady(final5);
   }
 
-  getEveryColor();
-  getEverySize();
-
   useEffect(() => {
-    if (data) {
-      getFilteredRender();
-    }
+    if (data.length > 0) getFilteredRender();
   }, [data]);
 
   useEffect(() => {
-    console.log(filters);
     getFilteredRender();
   }, [filters]);
 
@@ -178,10 +186,26 @@ function Filter() {
           <input
             type="number"
             className="border border-[border-[#0000001A]] rounded-2xl"
+            onChange={(e) =>
+              setFilters((prev) => {
+                return {
+                  ...prev,
+                  price: [Number(e.target.value), prev.price[1]],
+                };
+              })
+            }
           />
           <input
             type="number"
             className="border border-[border-[#0000001A]] rounded-2xl"
+            onChange={(e) =>
+              setFilters((prev) => {
+                return {
+                  ...prev,
+                  price: [prev.price[0], Number(e.target.value)],
+                };
+              })
+            }
           />
         </div>
       </div>

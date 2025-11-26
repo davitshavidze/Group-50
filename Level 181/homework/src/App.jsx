@@ -3,7 +3,7 @@ import { useRef } from "react";
 function App() {
   const color = useRef("#000");
   const inpText = useRef("");
-  const visible = useRef(true);
+  const visible = useRef('block');
 
 
   function handleChange() {
@@ -17,9 +17,10 @@ function App() {
   }
 
   function handleVisible() {
-    visible.current = !visible.current;
-    console.log(visible.current)
+    visible.current = 'none'
   }
+
+
 
   return (
     <>
@@ -46,7 +47,7 @@ function App() {
       </button>
 
       <br />
-      <p className={visible.current ? `text-2xl font-medium m-2` : "hidden"} ref={visible}>
+      <p className={visible.current ? `text-2xl font-medium m-2` : "hidden"} ref={visible} style={{display: visible.current}}>
         Hello, its homework!
       </p>
       <button className="font-medium border-1 rounded p-1 text-white bg-black hover:text-black hover:bg-white transition-all duration-300 m-2" onClick={handleVisible}>
