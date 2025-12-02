@@ -15,11 +15,11 @@ function Header() {
         <img
           src="./x.png"
           alt="xD"
-          className="w-[14px] h-[14px] relative sm:left-[600px] hover:cursor-pointer hidden sm:block"
+          className="w-3.5 h-3.5 relative sm:left-[600px] hover:cursor-pointer hidden sm:block"
           onClick={() => {setActive(!active); console.log(active)}}
         />
       </div>
-      <header className="bg-[#FFFFFF] h-auto sm:h-[100px] w-full flex flex-wrap justify-evenly sm:justify-between items-center gap-[20px] px-4 sm:px-10 py-4">
+      <header className="bg-[#FFFFFF] h-auto sm:h-[100px] w-full flex flex-wrap justify-evenly sm:justify-between items-center gap-5 px-4 sm:px-10 py-4">
         <Link to="/">
           <h1 className="font-extrabold text-3xl sm:text-5xl relative sm:left-[50px]">
             SHOP.CO
@@ -27,7 +27,7 @@ function Header() {
         </Link>
 
         <div>
-          <ul className="flex flex-wrap justify-center gap-[20px] sm:gap-[40px] text-[16px] sm:text-[20px] items-center">
+          <ul className="flex flex-wrap justify-center gap-5 sm:gap-10 text-[16px] sm:text-[20px] items-center">
             <li>
               <select className="active:border-0 focus:border-0 active:outline-0 focus:outline-0 bg-transparent hover:cursor-pointer hover:scale-[1.025] transition-all duration-300">
                 <option>Shop</option>
@@ -46,7 +46,7 @@ function Header() {
           </ul>
         </div>
 
-        <div className="bg-[#F0F0F0] rounded-4xl flex justify-start items-center w-[90%] sm:w-[575px] pl-[10px] h-[40px]">
+        <div className="bg-[#F0F0F0] rounded-4xl flex justify-start items-center w-[90%] sm:w-[575px] pl-2.5 h-10">
           <span className="material-symbols-outlined opacity-70">search</span>
           <input
             type="text"
@@ -60,13 +60,13 @@ function Header() {
             <img
               src="./cart.png"
               alt="xD"
-              className="w-[24px] h-[24px] hover:cursor-pointer"
+              className="w-6 h-6 hover:cursor-pointer"
             />
           </Link>
           <img
             src="./profile.png"
             alt="xD"
-            className="w-[24px] h-[24px] hover:cursor-pointer"
+            className="w-6 h-6 hover:cursor-pointer"
           />
         </div>
       </header>

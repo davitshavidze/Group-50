@@ -2,62 +2,46 @@ import { UserContext } from "../../../FullPage";
 import { useState, useEffect } from "react";
 import { useContext } from "react";
 function Right() {
-  const { chosenCard, setChosenCard, sum, setSum } = useContext(UserContext);
+  const { chosenCard, setChosenCard, sum, setSum, cart, setCart } = useContext(UserContext);
 
   const [discount, setDiscount] = useState(0);
-  const [fee, setFee] = useState(0);
-  function discountCalc() {
-    if (sum !== 0){
-      setDiscount(25)
-    } else {
-      setDiscount(0);
-    }
-  }
-
-  function calcFee(){
-    if(sum !== 0){
-      setFee(10)
-    } else if (sum > 200) {
-      setFee(15)
-    } else {
-      setFee(0)
-    }
-  }
-
+  const [fee, setFee] = useState(10);
+  
   useEffect(() => {
-    discountCalc()
-    calcFee()
-  })
+    const total = cart.reduce((acc, item) => {
+      return acc + item.price * item.quantity;
+    }, 0);
+
+    setSum(total);
+  }, [cart]);
 
   const [num, setNum] = useState(chosenCard.quantity);
 
   return (
-    <div className="border border-[#0000001A] rounded-[20px] px-[24px] py-[20px] h-[440px] flex-5 flex flex-col gap-5 mt-5">
-      <h2 className="text-[20px] font-[700]">Order Summary</h2>
+    <div className="border border-[#0000001A] rounded-[20px] px-6 py-5 h-[440px] flex-5 flex flex-col gap-5 mt-5">
+      <h2 className="text-[20px] font-bold">Order Summary</h2>
 
       <div className="flex flex-col gap-5">
         <div className="flex justify-between items-center gap-2">
           <p className="text-black opacity-80">Subtotal</p>
-          <p className="font-[700] text-[20px]">${sum}</p>
+          <p className="font-bold text-[20px]">${sum}</p>
         </div>
 
         <div className="flex justify-between items-center gap-2">
           <p className="text-black opacity-80">Discount</p>
-          <p className="text-red-500 font-[700] text-[20px]">
-            ${discount}
-          </p>
+          <p className="text-red-500 font-bold text-[20px]">${discount}</p>
         </div>
 
         <div className="flex justify-between items-center gap-2">
           <p className="text-black opacity-80">Delivery Fee</p>
-          <p className="font-[700] text-[20px]">${fee}</p>
+          <p className="font-bold text-[20px]">${fee}</p>
         </div>
 
         <div className="w-full bg-[#0000001A] h-[1.5px]"></div>
 
         <div className="flex justify-between items-center gap-2">
           <p>Total</p>
-          <p className="font-[700] text-[24px]">${sum + fee - discount}</p>
+          <p className="font-bold text-[24px]">${sum + fee - discount}</p>
         </div>
       </div>
 
@@ -66,7 +50,7 @@ function Right() {
           <img
             src="./label.png"
             alt="dont work"
-            className="w-[24px] h-[24px]"
+            className="w-6 h-6"
           />
           <input
             type="text"
