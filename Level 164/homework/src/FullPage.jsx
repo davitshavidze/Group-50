@@ -40,19 +40,7 @@ function FullPage() {
   return (
     <>
       <UserContext.Provider
-        value={{
-          chosenCard,
-          setChosenCard,
-          data,
-          ready,
-          setReady,
-          sum,
-          setSum,
-          active,
-          setActive,
-          cart,
-          setCart,
-        }}
+        value={{ chosenCard, setChosenCard, data, ready, setReady, sum, setSum, active, setActive, cart, setCart }}
       >
         <Header />
         <main>
