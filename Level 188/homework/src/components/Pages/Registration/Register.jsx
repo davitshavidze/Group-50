@@ -1,7 +1,10 @@
 import { useForm } from "react-hook-form";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
+import { useState } from "react";
 
 function Register() {
+  const navigation = useNavigate()
+  const [success, setSuccess] = useState("")
   const { register, handleSubmit, formState: { errors }, setError } = useForm({
     defaultValues: {
       name: "",
@@ -51,16 +54,28 @@ function Register() {
                 return;
               }
 
+              data.money = 100;
+              data.status = "User";
+              data.cart = []
+
               existingUsers.push(data);
               localStorage.setItem("userData", JSON.stringify(existingUsers));
               console.log(data);
+
+              setSuccess("User Registered Succesfully!");
+
+              setTimeout(() => {
+                setSuccess("");
+
+                navigation("/Login")
+              }, 1000)
             })}
           >
             <input
               type="text"
               placeholder="Name"
               className="placeholder:opacity-50 border-2 rounded-2xl p-2 focus:border-blue-600 focus:outline-none placeholder:font-semibold transition-all duration-300"
-              {...register("name", { required: "Value is Required!" })}
+              {...register("name", { required: "Value is Required!", maxLength: {value: 20, message: "Max length 20 symbols"} })}
             />
 
             <p className="text-red-500 font-semibold">
@@ -71,7 +86,7 @@ function Register() {
               type="text"
               placeholder="Email"
               className="placeholder:opacity-50 border-2 rounded-2xl p-2 focus:border-blue-600 focus:outline-none placeholder:font-semibold transition-all duration-300"
-              {...register("email", { required: "Value is Required!" })}
+              {...register("email", { required: "Value is Required!", validate: (value) => value.endsWith("@gmail.com") || "Invalid Email!" })}
             />
 
             <p className="text-red-500 font-semibold">
@@ -94,6 +109,10 @@ function Register() {
               {errors?.password?.message}
             </p>
 
+            {success ? 
+              <p className="text-green-600 font-semibold text-center mt-1"> {success} </p> 
+            : ""}
+
             <div className="flex flex-col justify-start gap-3 mt-4">
               <input
                 type="submit"
@@ -102,7 +121,7 @@ function Register() {
 
               <span>
                 Do you have account?{" "}
-                <Link to="./Login">
+                <Link to="/Login">
                   <b className="text-blue-500 font-medium cursor-pointer hover:text-blue-800 transition-all duration-300">
                     Sign In
                   </b>

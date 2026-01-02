@@ -1,8 +1,28 @@
 import { useForm } from "react-hook-form";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 
 function Authorization() {
-  const {register, handleSubmit, formState: { errors }, setError } = useForm();
+  const navigation = useNavigate();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    setError,
+  } = useForm();
+
+  if (!localStorage.getItem("admins")) {
+    const admins = [
+      {
+        email: "datoshavidze74@gmail.com",
+        money: 100000,
+        name: "Davit Shavidze",
+        password: "dato20091212",
+        status: "Admin",
+      },
+    ];
+
+    localStorage.setItem("admins", JSON.stringify(admins));
+  }
 
   return (
     <>
@@ -31,7 +51,24 @@ function Authorization() {
           <form
             className="flex flex-col gap-2"
             onSubmit={handleSubmit((data) => {
-              const existingUsers = JSON.parse(localStorage.getItem("userData")) || [];
+              const admins = JSON.parse(localStorage.getItem("admins")) || [];
+
+              const existingUsers =
+                JSON.parse(localStorage.getItem("userData")) || [];
+
+              const foundAdmin = admins.find(
+                (admin) =>
+                  admin.email === data.email && admin.password === data.password
+              );
+
+              if (foundAdmin) {
+                localStorage.setItem(
+                  "Found",
+                  JSON.stringify(foundAdmin)
+                );
+                navigation("/");
+                return;
+              }
 
               const foundUser = existingUsers.find(
                 (user) => user.email === data.email
@@ -53,14 +90,20 @@ function Authorization() {
                 return;
               }
 
-              console.log("Login successful:", foundUser);
+              localStorage.setItem(
+                "Found",
+                JSON.stringify({ ...foundUser, role: "User" })
+              );
+              navigation("/");
             })}
           >
             <input
               type="text"
               placeholder="Email"
               className="placeholder:opacity-50 border-2 rounded-2xl p-2 focus:border-blue-600 focus:outline-none placeholder:font-semibold transition-all duration-300"
-              {...register("email", { required: "Value is Required!" })}
+              {...register("email", {
+                required: "Value is Required!",
+              })}
             />
 
             <p className="text-red-500 font-semibold">
@@ -87,12 +130,12 @@ function Authorization() {
             <div className="flex flex-col justify-start gap-3 mt-4">
               <input
                 type="submit"
-                className="bg-[#3461FD] rounded-2xl text-white p-1.5 font-semibold hover:bg-gray-900 transition-al duration-300 cursor-pointer w-full"
+                className="bg-[#3461FD] rounded-2xl text-white p-1.5 font-semibold hover:bg-gray-900 transition-all duration-300 cursor-pointer w-full"
               />
 
               <span>
                 Dont have account?{" "}
-                <Link to="/">
+                <Link to="/Register">
                   <b className="text-blue-500 font-medium cursor-pointer hover:text-blue-800 transition-all duration-300">
                     Sign Up
                   </b>

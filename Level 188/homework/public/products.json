@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Pizza",
+    "category": "Pizza",
+    "price": 13.99,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Lj3_8eh0xYQLDhyh1pYwOF6l00mL7hIfww&s"
+  },
+  {
+    "id": 2,
+    "name": "Veggie Burger",
+    "category": "Burger",
+    "price": 11.5,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFCyr5hdJO_YnNSrEf1c2Oixsc-3VTdfHP9Q&s"
+  },
+  {
+    "id": 3,
+    "name": "Mixed Green Salad",
+    "category": "Salad",
+    "price": 9.99,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdjRD2_zawkF7e8vF2fMCZ4OE-q3oykxqMEQ&s"
+  },
+  {
+    "id": 4,
+    "name": "Salmon Sushi Roll",
+    "category": "Sushi",
+    "price": 15.75,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYBjHlNmVk7O2IxXjUUFmeHPMIEaIjQKjU8Q&s"
+  },
+  {
+    "id": 5,
+    "name": "California Sushi Roll",
+    "category": "Sushi",
+    "price": 16.25,
+    "image": "https://simmerandsage.com/wp-content/uploads/2023/09/Crunchy-California-Roll1.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Pepperoni Pizza",
+    "category": "Pizza",
+    "price": 14.99,
+    "image": "https://www.cobsbread.com/cdn/shop/articles/Pepperoni-pizza-850x630-1-585x400-1.jpg?v=1762545342"
+  },
+  {
+    "id": 7,
+    "name": "Chicken Salad",
+    "category": "Salad",
+    "price": 10.5,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzhqxnTIIpqkFDxCfrCtPQD63Dumf9my61kA&s"
+  },
+  {
+    "id": 8,
+    "name": "Beef Steak",
+    "category": "Main Course",
+    "price": 22.0,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA_EF-1qMDLEoJA2sJ9S0rbE8qgw1ffJK3Bw&s"
+  },
+  {
+    "id": 9,
+    "name": "Spaghetti Bolognese",
+    "category": "Pasta",
+    "price": 18.5,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrzv37monxt-pXFtL8SS44xtu9JlgOhqlSKw&s"
+  },
+  {
+    "id": 10,
+    "name": "Garlic Bread",
+    "category": "Appetizer",
+    "price": 6.5,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTrIDSrMqdEAzQbW7htOG5EYPrYmuYXQTXhw&s"
+  },
+  {
+    "id": 11,
+    "name": "Grilled Sandwich",
+    "category": "Sandwich",
+    "price": 12.25,
+    "image": "https://californiaavocado.com/wp-content/uploads/2023/04/AvoBaconGrilledCheese_0011-scaled-e1682914545487.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Seafood Pasta",
+    "category": "Pasta",
+    "price": 21.0,
+    "image": "https://thebigmansworld.com/wp-content/uploads/2024/08/seafood-pasta-recipe.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Fruit Dessert",
+    "category": "Dessert",
+    "price": 7.25,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBc8bsJxF7h_6tJisJDLlnfuEUTOvGaqEm5A&s"
+  },
+  {
+    "id": 14,
+    "name": "Cheese Platter",
+    "category": "Appetizer",
+    "price": 13.75,
+    "image": "https://www.tasteofhome.com/wp-content/uploads/2024/12/EXPS_TOHD24_224813_SuzanNajjar_3.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Veggie Pizza",
+    "category": "Pizza",
+    "price": 14.5,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXJuEUBS5sUiE_AsWQOmbPJRiBsva_TwmAmw&s"
+  },
+  {
+    "id": 16,
+    "name": "Taco Plate",
+    "category": "Main Course",
+    "price": 16.0,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS54TFghj0V5G_ppyAz2Ltqtd1-4mfPNUeGDQ&s"
+  },
+  {
+    "id": 17,
+    "name": "Chicken Wings",
+    "category": "Appetizer",
+    "price": 11.99,
+    "image": "https://easychickenrecipes.com/wp-content/uploads/2023/08/featured-buffalo-wings-recipe.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Chocolate Cake",
+    "category": "Dessert",
+    "price": 8.5,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnwA1LUEceMZf8lJ8UThz7pGxK0_lsumj6Qg&s"
+  },
+  {
+    "id": 19,
+    "name": "Iced Tea",
+    "category": "Beverage",
+    "price": 3.75,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsH4eF9NgIQqTAYg4L6tFWYeVIOO3xbrreVQ&s"
+  },
+  {
+    "id": 20,
+    "name": "Fresh Juice",
+    "category": "Beverage",
+    "price": 4.25,
+    "image": "https://content.jdmagicbox.com/comp/def_content/juice_centres/default-juice-centres-14.jpg"
+  }
+]

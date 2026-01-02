@@ -43,12 +43,8 @@ function CardTable() {
   return (
     <section className="w-full flex flex-col gap-4 items-center mt-18">
       <div className="flex w-full justify-between flex-wrap gap-3 px-5">
-        <h3 className="font-[600] text-3xl sm:text-4xl">Casual</h3>
+        <h3 className="font-semibold text-3xl sm:text-4xl">Casual</h3>
 
-        {/* <p className="text-sm sm:text-base">
-          Showing 1-9 of 20 Products Sort By:
-          <span className="ml-1 font-[600]">Most Popular</span>
-        </p> */}
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 w-full px-5 mt-3">
